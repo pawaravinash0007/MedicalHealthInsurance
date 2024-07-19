@@ -15,8 +15,8 @@ import pickle
 def main():
     st.title("Health insurance")
     st.sidebar.title("Health insurance")
-    st.markdown("Lets Detect Health insurance EMI")
-    st.sidebar.markdown("Lets Detect Health insurance EMI")
+    # st.markdown("Lets Detect Health insurance EMI")
+    # st.sidebar.markdown("Lets Detect Health insurance EMI")
 
 #---- load data---
     st.cache(persist=True)
@@ -103,10 +103,10 @@ def main():
             st.write("Charges",y_pred_lr)
             
     if st.sidebar.checkbox("Show Training data",False):
-        st.subheader("Health Insurance EMI")
+        st.subheader("Health Insurance")
         st.write(x_train)
     if st.sidebar.checkbox("Show raw data",False):
-        st.subheader("Health Insurance EMI")
+        st.subheader("Health Insurance")
         st.write(df)
 
     
